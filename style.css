@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #282828;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  box-shadow: -20px -20px 15px #202020, 20px 20px 15px #202020;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-image: url("2.jpg");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #747474;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 4;
+}
+
+.clock .sec {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.sec::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background-color: #17fb02;
+  z-index: 3;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
+
+.clock .min {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transform: rotateZ(50deg);
+  -webkit-transform: rotateZ(50deg);
+  -moz-transform: rotateZ(50deg);
+  -ms-transform: rotateZ(50deg);
+  -o-transform: rotateZ(50deg);
+}
+
+.min::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 4px;
+  height: 100px;
+  background-color: #fb23d1;
+  z-index: 2;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
+
+.clock .hour {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+  -moz-transform: rotateZ(90deg);
+  -ms-transform: rotateZ(90deg);
+  -o-transform: rotateZ(90deg);
+}
+
+.hour::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 70px;
+  top: 47px;
+  background-color: #ffac13;
+  z-index: 1;
+  border-radius: 6px 6px 0 0;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+}
